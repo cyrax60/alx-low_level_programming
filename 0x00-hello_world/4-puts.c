@@ -1,10 +1,10 @@
 #include<stdio.h>
-/*
- * main - the main function
- * 
- * discription: that program will print string
+/**
+ * main - this is the main function
  *
- * return: return 0
+ * Description: that program will print string
+ *
+ * Return: return 0
  */
 int main(void)
 {
