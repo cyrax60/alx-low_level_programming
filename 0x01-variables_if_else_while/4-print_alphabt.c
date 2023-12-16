@@ -10,7 +10,7 @@ int main(void)
 {
 	int l;
 
-	for(l = 97; l <= 122; l++)
+	for (l = 97; l <= 122; l++)
 	{
 		if (l != 133 || l != 101)
 		{
