@@ -8,30 +8,27 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int num1, num2;
 
-	for (a = 0; a <= 9; a++)
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		for (b = 0; b <= 8; b++)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			for (c = 0; c <= 9; c++)
-			{
-				for (d = 1; d <= 9; d++)
-				{
-					putchar(a + '0');
-					putchar(b + '0');
-					putchar(' ');
-					putchar(c + '0');
-					putchar(d + '0');
-					if (a != 9 || b != 8 || c != 9 || d != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+
+			if (num1 == 98 && num2 == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
