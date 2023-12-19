@@ -8,7 +8,7 @@ void jack_bauer(void)
 {
 	int minut, hour;
 
-	for (hour = 0; hour <= 24; hour++)
+	for (hour = 0; hour <= 23; hour++)
 	{
 		for (minut = 0; minut <= 59; minut++)
 		{
