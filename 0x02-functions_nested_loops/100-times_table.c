@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_time_table - this is function
+ * print_times_table - this is function
  *
  * @n: this is paramter n
  *
  * Description: will print some digit
  */
-void print_time_table(int n)
+void print_times_table(int n)
 {
 	int i, j, res;
 
