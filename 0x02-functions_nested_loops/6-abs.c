@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _abc - this is the function
+ * _abs - this is the function
  *
  * @i: this is the parametr
  *
@@ -8,7 +8,7 @@
  *
  * Return: return 0 or 1
  */
-int _abc(int i)
+int _abs(int i)
 {
 	if (i > 0)
 	{
