@@ -1,33 +1,29 @@
 #include "main.h"
-
 /**
- * leet - breaking out the leet speak.
- * @s: string to make 1337
- *
- * Return: a point the s
+ * leet - encodes a string into 1337
+ * @s: input string.
+ * Return: the pointer to dest.
  */
+
 char *leet(char *s)
 {
-	char lt[10][2] = {
-		{'a', '0' + 4}, {'A', '0' + 4},
-		{'e', '0' + 3}, {'E', '0' + 3},
-		{'o', '0'}, {'O', '0'},
-		{'t', '0' + 7}, {'T', '0' + 7},
-		{'l', '0' + 1}, {'L', '0' + 1}};
-	int i = 0;
-	int z = 0;
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	while (s[i] != '\0')
+	while (*(s + count) != '\0')
 	{
-		while (lt[z][0] != '\0')
+		for (i = 0; i < 5; i++)
 		{
-			if (s[i] == lt[z][0])
-				s[i] = lt[z][1];
-			z++;
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
 		}
-		z = 0;
-		i++;
+		count++;
 	}
+
 	return (s);
 }
-
