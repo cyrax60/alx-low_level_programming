@@ -1,8 +1,8 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-* is_sep - this is the function
-* @s: the parameter
+* is_sep - check if a char is a seperator.
+* @s: the char to test.
 *
 * Return: 1 if seperator is found else 0
 */
@@ -22,10 +22,10 @@ int is_sep(char s)
 }
 
 /**
-* cap_string - This function
+* cap_string - This function capitalizes all words of a string.
 * @s: sring to be processed.
 *
-* Return: pointer
+* Return: pointer to the modified string.
 */
 char *cap_string(char *s)
 {
@@ -45,4 +45,5 @@ char *cap_string(char *s)
 }
 	return (s);
 }
+
 
