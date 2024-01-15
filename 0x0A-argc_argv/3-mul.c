@@ -10,15 +10,15 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc == 3)
-	{
-		printf("%d\n", argv[1] * argv[2]);
-	}
-	else
-	{
-		printf("Error\n");
+	int mult = 0;
+	char c[] = "Error";
 
+	if (argc != 3)
+	{
+		printf("%s\n", c);
 		return (1);
 	}
+	mult = atoi(argv[1]) * atoi(argv[2]);
+	printf("%i\n", mult);
 	return (0);
 }
