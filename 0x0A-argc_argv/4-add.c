@@ -10,8 +10,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int main(int argc, char *argv[])
-{
 	int i, suma = 0, res = 0;
 	char c[] = "Error", *find_letter;
 
@@ -38,4 +36,4 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 	return (0);
 }
-}
+
