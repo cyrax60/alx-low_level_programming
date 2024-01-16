@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * creat_array - function
+ * create_array - function
  * @size: int
  * @c: char
  * Return: return char
@@ -10,7 +10,7 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
-	char *array;
+	char *array = NULL;
 
 	if (size == 0)
 	{
@@ -19,9 +19,12 @@ char *create_array(unsigned int size, char c)
 	if (size != 0)
 	{
 		array = (char *)malloc(size * sizeof(char));
-		for (i = 0; i < size; i++)
+		if (array != NULL)
 		{
-			array[i] = c;
+			for (i = 0; i < size; i++)
+			{
+				array[i] = c;
+			}
 		}
 	}
 	return (array);
